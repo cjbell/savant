@@ -9,6 +9,7 @@
 
 /node_modules/
 /vendor/assets/components
+/public/uploads
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
