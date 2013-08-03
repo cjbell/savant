@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: savant_development
+  pool: 5
+  host: localhost
+  username:
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: savant_test
+  pool: 5
+  host: localhost
+  username:
+  password:

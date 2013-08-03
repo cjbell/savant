@@ -1,0 +1,8 @@
+{
+  "name": "savant",
+  "dependencies": {
+    "normalize-css": "~2.1.2",
+    "bigbird": "~0.3.3",
+    "sir-trevor-js": "git@github.com:madebymany/sir-trevor-js.git#0.3.0-rc.2"
+  }
+}
