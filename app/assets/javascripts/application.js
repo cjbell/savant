@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery/jquery
+//= require jquery_ujs
 //= require underscore/underscore
 //= require Eventable/eventable
 //= require bigbird/bigbird
@@ -19,6 +20,12 @@
 
 $(function(){
   SirTrevor.DEBUG = true;
+
+  SirTrevor.setDefaults({
+    uploadUrl: "/admin/images"
+  });
+
+
   new SirTrevor.Editor({
     el: $('.js-st-instance')
   });

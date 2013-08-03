@@ -20,9 +20,17 @@ module Admin
     end
 
     def edit
+      @post = Post.find params[:id]
     end
 
     def update
+      @post = Post.find params[:id]
+
+      if @post.update_attributes post_params
+        redirect_to admin_posts_path
+      else
+        render :edit
+      end
     end
 
     def destroy
