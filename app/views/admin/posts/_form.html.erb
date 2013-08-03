@@ -1,8 +1,15 @@
-<%= form_for admin_posts_path(@post) do |f| %>
+<%= form_for [:admin, @post] do |f| %>
+
+  <div class="form__item">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
 
   <div class="form__item">
     <%= f.label :content %>
     <%= f.text_field :content, class: 'js-st-instance' %>
   </div>
+
+  <%= f.submit "Save" %>
 
 <% end %>
